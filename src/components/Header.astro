@@ -1,0 +1,30 @@
+
+<header id="navbar" class="bg-transparent  flex justify-center z-10 fixed w-[100%] font-raleway">
+
+    <div></div>
+    <nav class=" text-white  text-center my-auto">
+        <ul class="h-8 items-center flex mt-4">
+           <li class="h-[100%] hover:border-b-2 hover:border-orange-600 transition inline-block"><a href="" class="mx-16 text-xl">Inicio</a></li>
+           <li class="h-[100%] hover:border-b-2 hover:border-orange-600 transition inline-block"><a href="" class="mx-16 text-xl">Nuestra Optica</a></li>
+           <li class="h-[100%] hover:border-b-2 hover:border-orange-600 transition inline-block"><a href="" class="mx-16 text-xl">Bienestar Integral</a></li>
+        </ul>
+            
+    </nav>
+
+        
+</header>
+
+
+ <script>
+    window.addEventListener('scroll', () =>{
+        const navbar = document.getElementById("navbar")
+        if(window.scrollY > 50){
+            navbar?.classList.add('bg-[#181819]')
+            navbar?.classList.add('transition')
+            navbar?.classList.remove('bg-transparent')
+        } else{
+            navbar?.classList.add('bg-transparent')
+            navbar?.classList.remove('bg-[#181819]')
+        }
+    })
+</script>   

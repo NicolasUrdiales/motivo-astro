@@ -1,0 +1,37 @@
+---
+interface Props {
+	title: string;
+}
+import Header from '../components/Header.astro';
+const { title } = Astro.props;
+// Supports weights 100-900
+import '@fontsource-variable/raleway';
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header/>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+<style is:global>
+
+	html {
+		font-family: 'Raleway Variable',system-ui, sans-serif;
+		background: #13151a;
+		color-scheme: light dark;
+	}
+
+</style>
