@@ -1,14 +1,18 @@
+---
+import imgAnalysis from '../../src/assets/images/analisis.png'
+import imgIndividual from '../assets/images/1 persona.png'
+import imgSetService from '../assets/images/Varias personas.png'
+---
 
 
-
-<script type="module" src="/public/scrollReveal.js"></script>
+<script is:inline src="/public/scrollReveal.js"></script>
 <section class="reveal mb-[300px]">
     <div class="items-center py-[30px] border-b-2 border-orange-500 mx-40">
         <h1 class="lg:text-5xl text-center ">Nuestros Servicios</h1>
     </div>
     <div class="reveal lg:flex lg:flex-row items-center justify-center mt-11 md:flex-col">
         <div class="bg-[#181919] shadow-2xl items-center hover:scale-110 transition inline-block lg:h-[400px] w-[400px] mx-12">
-            <img src="/public/images/1 persona.png" alt="">
+            <img src={imgIndividual.src} alt="">
             <h3 class="text-center text-xl font-semibold"><i>INDIVIDUO</i></h3>
             <ul class="list-disc pl-5 ml-4 mb-8">
                 <li class="mb-2 font-light"><i>Sesiones Personalizadas</i></li>
@@ -18,7 +22,7 @@
             <button onclick="" class="bg-[#181919] text-orange-500 border-orange-500 border w-[75%] mx-11 mt-5 hover:bg-orange-600 hover:text-slate-100">Mas info</button>
         </div>
         <div class="bg-[#181919] shadow-2xl hover:scale-110 transition inline-block lg:h-[400px] w-[400px] mx-12">
-            <img src="/public/images/Varias personas.png" alt="">
+            <img src={imgSetService.src} alt="">
             <h3 class="text-center text-xl font-semibold"><i>CONJUNTO</i></h3>
             <ul class="list-disc pl-5 ml-4">
                 <li class="font-light"><i>Gestión del cambio</i></li>
@@ -29,7 +33,7 @@
             <button onclick="" class="bg-[#181919] text-orange-500 border-orange-500 border w-[75%] mx-11 mt-5 hover:bg-orange-600 hover:text-slate-100">Mas info</button>
         </div>
         <div class="bg-[#181919] shadow-2xl  hover:scale-110 transition inline-block lg:h-[400px] w-[400px] mx-12">
-            <img src="/public/images/analisis.png" alt="" class="mb-2">
+            <img src={imgAnalysis.src} alt="" class="mb-2">
             <h3 class="text-center text-xl font-semibold"><i>ANALISIS DE CONTEXTO</i></h3>
             <ul class="list-disc pl-5 ml-4">
                 <li class="font-light"><i>Evaluación de riesgos políticos y económicos</i></li>

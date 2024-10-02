@@ -1,12 +1,17 @@
+---
+import imageHeadear from '../assets/images/headerPhoto.jpeg'
+import logoMotivo from '../assets/images/LogoMotivo.png'
+---
+
 <div class="-z-10 absolute w-[100%] h-[600px]">
-    <img src="../../public/images/headerPhoto.jpeg" alt="" class="object-cover w-full h-full">
+    <img src={imageHeadear.src} alt="" class="object-cover w-full h-full">
 </div>
 <div class="h-[250px]"></div>
 <div class="flex justify-center w-max m-auto mx-auto -translate-x-60">
     <picture class="h-36 w-36 flex-none mr-16">
         <a href="">
 
-            <img src="../../public/images/LogoMotivo.png"
+            <img src={logoMotivo.src}
             alt="logo motivo"
             class="object-cover  rounded-full h-36 bg-gradient-to-r from-orange-100 to-orange-800 hover:scale-105 transition inline-block" 
             >
